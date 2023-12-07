@@ -1,11 +1,12 @@
 @media screen and (min-width: 480px) and (max-width: 768px) {
   body {
     padding: 0;
-    margin: 0;
-    margin: auto;
-    width: 480px;
+    margin: 0 auto;
+    min-width: 480px;
+    max-width: 768px;
     font-family: "Roboto", sans-serif;
     font-family: "Raleway", sans-serif;
+    overflow-x: hidden;
   }
   * {
     text-decoration: none;
@@ -22,10 +23,6 @@
     justify-content: center;
     align-items: center;
   }
-  a.logo {
-    padding-bottom: 35px;
-    padding-top: 40px;
-  }
   .logo .web {
     color: #2196F3;
   }
@@ -39,33 +36,127 @@
     font-size: 24px;
   }
   .navbar-toggler {
-    margin-right: 50px;
+    align-items: end;
   }
-  div.container-fluid {
-    width: 480px;
+  .navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl {
+    min-width: 100%;
+  }
+  .container-fluid {
+    min-width: 100%;
+    display: flex;
   }
   .header_box {
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
   }
   .modal-content {
     width: 450px;
-    height: 650px;
+    margin: 0 auto;
   }
   .modal-content .modal-title {
     text-align: center;
   }
+  .modal-content .btn-close {
+    border: 1px solid #757575;
+    border-radius: 20px;
+  }
+  .modal-content .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+  }
+  .modal-content .modal-body .box-card-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .modal-content .modal-body .list-input {
+    width: 370px;
+    height: 58px;
+  }
+  .modal-content .modal-body .card-input-title {
+    color: #757575;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.12px;
+  }
+  .modal-content .modal-body .card-main-input {
+    display: flex;
+    width: 370px;
+    height: 40px;
+    border-radius: 4px;
+    outline: 1px solid rgba(33, 33, 33, 0.2);
+    align-items: center;
+  }
+  .modal-content .modal-body .icon-input {
+    padding: 0 12px 0 12px;
+  }
+  .modal-content .modal-body .card-input {
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+  .modal-content .modal-body .box-textarea {
+    padding-top: 10px;
+    width: 372px;
+  }
+  .modal-content .modal-body .textarea-modal {
+    width: 338px;
+    height: 96px;
+    padding: 12px 16px 12px 16px;
+    resize: none;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    outline: none;
+  }
+  .modal-content .modal-body .textarea-modal::-moz-placeholder {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.12px;
+    color: #757575;
+  }
+  .modal-content .modal-body .textarea-modal::placeholder {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.12px;
+    color: #757575;
+  }
   .modal-content .modal-footer {
+    display: flex;
+    flex-direction: column;
     align-self: center;
+    border-top: none;
+    padding-top: 0;
+  }
+  .modal-content .modal-footer .checkbox-text {
+    color: #757575;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.36px;
+  }
+  .modal-content .modal-footer .checkbox-text a {
+    text-decoration: underline;
+  }
+  .modal-content .modal-footer .checkbox-box {
+    padding: 21px 0 31px 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
   .modal-content .modal-footer .btn {
     padding: 10px 52px 10px 52px;
+    margin: 0;
   }
   .link_bacground {
     background: rgba(47, 48, 58, 0.5) url(../images/bacground_img.jpg);
-    width: 480px;
+    width: 100%;
     height: 400px;
     background-size: cover;
     background-position: center;
@@ -95,6 +186,10 @@
     border-radius: 4px;
     background: #2196F3;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  }
+  .list-card {
+    width: 400px;
+    margin: 0 auto;
   }
   .list-card .title {
     text-align: center;
@@ -186,10 +281,12 @@
     padding-top: 120px;
   }
   .customers .card-block {
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
     margin-bottom: 60px;
+    justify-content: space-around;
   }
   .customers .card-block .icon {
     width: 106px;
@@ -220,7 +317,9 @@
   .customers .card-block {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    justify-content: space-evenly;
+    padding-left: 10px;
+    padding-inline-end: 10px;
     margin-bottom: 60px;
   }
   .customers .card-block .icon {
@@ -237,8 +336,8 @@
     fill: #2196F3;
   }
   .logo {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   .logo .web {
     color: #2196F3;
@@ -253,7 +352,7 @@
     font-size: 24px;
   }
   .footer {
-    width: 480px;
+    width: 100%;
     height: 600px;
     background-color: #2F303A;
     display: flex;
@@ -298,5 +397,45 @@
   }
   .footer .soc-contact .box-icon .icon:hover {
     background-color: #2196F3;
+  }
+  .footer .footer-form-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer-form-field .title {
+    color: white;
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+  }
+  .footer .footer-form-field .footer-input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 430px;
+    height: 50px;
+    padding: 0 10px 0 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    border-radius: 5px;
+  }
+  .footer .footer-form-field .footer-input-button {
+    border-radius: 4px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    width: 196px;
+    height: 50px;
+    margin-top: 20px;
+  }
+  .footer .footer-form-field .footer-input-button .footer-batton-text {
+    color: white;
+  }
+  .footer .footer-form-field .footer-input-button .btn-icon {
+    padding-left: 12px;
   }
 }/*# sourceMappingURL=main.css.map */

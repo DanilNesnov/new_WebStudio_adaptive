@@ -70,7 +70,7 @@
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
             >
-            Замовити послугу
+              Замовити послугу
             </button>
 
             <!-- Modal -->
@@ -95,13 +95,42 @@
                     ></button>
                   </div>
                   <div class="modal-body">
-                    
-
-
-
+                    <div class="box-card-input">
+                      <div class="list-input">
+                        <span class="card-input-title">Ім'я</span>
+                        <div class="card-main-input">
+                          <img class="icon-input" src="./icon/person-black-18dp 1.svg" alt="">
+                          <input class="card-input" type="text">
+                        </div>
+                      </div>
+                      <div class="card-input">
+                        <span class="card-input-title">Телефон</span>
+                        <div class="card-main-input">
+                          <img class="icon-input" src="./icon/phone-black-18dp 1.svg" alt="">
+                          <input class="card-input" type="text">
+                        </div>
+                      </div>
+                      <div class="card-input">
+                        <span class="card-input-title">Пошта</span>
+                        <div class="card-main-input">
+                          <img class="icon-input" src="./icon/email-black-18dp 1.svg" alt="">
+                          <input class="card-input" type="text">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box-textarea">
+                      <span class="card-input-title">Коментар</span>
+                      <textarea class="textarea-modal" rows="4" placeholder="Введіть текст"></textarea>
+                    </div>
                     
                   </div>
                   <div class="modal-footer">
+                    <div class="checkbox-box">
+                      <input id="mycheckbox" class="checkbox" type="checkbox">
+                      <span class="checkbox-text">Погоджуюся з розсилкою та приймаю<a href="" class="checkbox-contract"> Умови договору</a></span>
+                    </div>
+
+                    
                     <button type="button" class="btn btn-primary">
                       Відправити
                     </button>
@@ -397,14 +426,19 @@
             </svg>
           </div>
         </div>
-        <div class="subscribe">
-          <h2 class="title">Підпишіться на розсилку</h2>
-        </div>
-
         <div class="footer-form-field">
-          <h3></h3>
+          <h6 class="title">Підпишіться на розсилку</h6>
           <input class="footer-input" placeholder="Email" type="text" />
-          <button></button>
+          <button class="footer-input-button">
+            <span class="footer-batton-text">Підписатися</span>
+            <img
+              src="./icon/icon-send.svg"
+              alt="Send Icon"
+              width="24"
+              height="24"
+              class="btn-icon"
+            />
+          </button>          
         </div>
       </div>
     </footer>
@@ -414,5 +448,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/JavaScript.js"></script>
   </body>
 </html>
