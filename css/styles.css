@@ -1,0 +1,38 @@
+body {
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    width: 100vw;
+  }
+}/*# sourceMappingURL=styles.css.map */

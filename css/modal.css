@@ -1,0 +1,98 @@
+.modal-btn {
+  border: none;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  background-color: inherit;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  padding: 0;
+  overflow: hidden;
+}
+
+.modal-body {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  padding: 48px 40px;
+  margin: 0;
+  border: 0;
+  overflow-y: auto;
+}
+
+.modal-close-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  border: none;
+  background-color: inherit;
+}
+
+.header-modal-main-btns {
+  margin-bottom: 302px;
+}
+
+.header-modal-text:hover {
+  color: #2196F3;
+}
+
+.header-modal-list-item + .header-modal-list-item {
+  margin-top: 35px;
+}
+
+.header-modal-text {
+  color: black;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  transition: color 0.5s;
+}
+
+.tell {
+  color: #2196F3;
+  font-family: Roboto;
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: 0.68px;
+}
+
+.email {
+  color: #757575;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.48px;
+  margin: 32px 0 64px 0;
+}
+
+.social-list {
+  display: flex;
+}
+
+.social-list-item {
+  color: #2196F3;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px; /* 122.222% */
+  letter-spacing: 0.36px;
+}
+
+.space-left {
+  padding-left: 10px;
+}
+
+.space-right {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}/*# sourceMappingURL=modal.css.map */
