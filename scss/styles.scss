@@ -22,10 +22,18 @@ ul {
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -35,6 +43,7 @@ ul {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
+  
 }
 
 @media screen and (min-width: 1201px){
